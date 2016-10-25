@@ -1,0 +1,19 @@
+[filter "hawser"]
+	clean = git hawser clean %f
+	smudge = git hawser smudge %f
+	required = true
+[user]
+	name = Brendan Ward
+	email = bcward@consbio.org
+[core]
+	excludesfile = /Users/bcward/.gitignore
+[mergetool "araxis"]
+     path = /Applications/Araxis Merge.app/Contents/Utilities/compare
+[filter "lfs"]
+	clean = git lfs clean %f
+	smudge = git lfs smudge %f
+	required = true
+[merge]
+	tool = araxis
+[diff]
+	tool = araxis
